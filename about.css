@@ -1,0 +1,42 @@
+.about-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .about-section h1 {
+    color: #ff0040;
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-section p {
+    font-size: 1.1rem;
+    color: #fff;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+  
+  .skills-section h2 {
+    color: #ff0040;
+    margin-bottom: 1rem;
+  }
+  
+  .skills-section ul {
+    list-style: none;
+    padding: 0;
+    color: #fff;
+  }
+  
+  .skills-section li {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .skills-section li::before {
+    content: "•";
+    margin-right: 0.5rem;
+    color: #ff0040;
+  }
+  
