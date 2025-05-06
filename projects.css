@@ -1,70 +1,87 @@
 /* Mes projets */
 .projects-container {
-    max-width: 1200px;
-    margin: 4rem auto;
-    padding: 2rem;
-  }
-  
-  .projects-container h1 {
-    text-align: center;
-    color: #ff0040;
-    margin-bottom: 2rem;
-  }
-  
-  .projects-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-  }
-  
-  .project-card {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    background-color: #1e1e1e;
-    border-radius: 10px;
-    border: 2px solid #ff0040;
-    box-shadow: 0 0 10px rgba(255, 0, 64, 0.4);
-    overflow: hidden;
-  }
-  
-  .project-image {
-    width: 50%;
-  }
-  
-  .project-image img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  
-  .project-info {
-    width: 50%;
-    padding: 1rem;
-  }
-  
-  .project-info h3 {
-    color: #ff0040;
-    margin-bottom: 1rem;
-  }
-  
-  .project-description {
-    font-size: 1rem;
-    color: #fff;
-    margin-bottom: 1rem;
-  }
-  
-  .btn-details {
-    padding: 0.75rem 1.5rem;
-    background-color: #ff0040;
-    color: #fff;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  
-  .btn-details:hover {
-    background-color: #e60036;
-  }
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 2rem;
+}
+
+.projects-container h1 {
+  text-align: center;
+  color: #ff0040;
+  margin-bottom: 2rem;
+}
+
+.projects-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  border: 2px solid #ff0040;
+  box-shadow: 0 0 10px rgba(255, 0, 64, 0.4);
+  overflow: hidden;
+  transition: height 0.5s ease-in-out;
+  height: 200px; /* Hauteur par défaut */
+}
+
+.project-card.open {
+  height: auto; /* Laisse la hauteur s'ajuster selon le contenu */
+}
+
+.project-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;  /* Assurez-vous que l'élément a une hauteur de 100% pour centrer verticalement */
+}
+
+.project-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;  /* Assure que l'image garde ses proportions */
+}
+
+
+.project-info {
+  width: 50%;
+  padding: 1rem;
+}
+
+.project-info h3 {
+  color: #ff0040;
+  margin-bottom: 1rem;
+}
+
+.project-description {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.project-description-expanded {
+  display: none;
+  margin-top: 1rem;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.btn-details {
+  padding: 0.75rem 1.5rem;
+  background-color: #ff0040;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-details:hover {
+  background-color: #e60036;
+}
